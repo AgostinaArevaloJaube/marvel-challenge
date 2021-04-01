@@ -1,0 +1,11 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $primary-font;
+	background-color: $light-color;
+}
+
+.hidden {
+	display: none;
+}
