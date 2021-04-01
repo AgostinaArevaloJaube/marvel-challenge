@@ -22,8 +22,58 @@
 		<title>Marvel</title>
 	</head>
 	<body>
-		<h1 id="trying">Hola Marvel</h1>
+		<header>
+			<section class="header-container">
+				<img class="logo" src="assets/marvel-logo.png" alt="Marvel Logo" />
+				<h1 class="title">SUPER<span class="title-heroes">HEROES</span></h1>
+				<nav class="navbar">
+					<a class="nav-link" href="">Favorites</a>
+					<hr class="line" />
+					<a class="nav-link" href="">Home</a>
+				</nav>
+			</section>
+		</header>
 
-		<script src="src/index.js" type="modules"></script>
+		<main class="main-container">
+			<section class="hero-background">
+				<div class="hero-container">
+					<h2 class="text">
+						explore, search and build your favorite
+						<span class="super">superhero</span> list
+					</h2>
+					<div class="search-container">
+						<input
+							class="search-input"
+							type="text"
+							id=""
+							placeholder="Search superheroe"
+						/>
+						<button class="regular-button search-button">Search</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="superheroes-section">
+				<div >
+					<h2 class="title-section">SUPER<span class="title-heroes">HEROES</span></h2>
+					<hr class="tittle-underline">
+				</div>
+
+				<div>
+					<!-- Acá van los superhéroes -->
+				</div>
+
+				<div>
+					<!-- acá va la paginación -->
+				</div>
+			</section>
+
+			
+		</main>
+
+		<div class="spinner hidden"></div>
+		<button class="regular-button hidden">Back home</button>
+
+		<script src="src/index.js" type="module"></script>
 	</body>
 </html>
