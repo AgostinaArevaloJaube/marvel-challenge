@@ -1,0 +1,24 @@
+.regular-button {
+	margin: 0.5rem;
+	padding: 0.3rem 0.9rem;
+	width: fit-content;
+	line-height: 2em;
+	text-align: center;
+	background-color: $secondary-color;
+	clip-path: polygon(100% 0%, 12% 0%, 0% 40%, 0% 100%, 25% 100%, 88% 100%, 100% 60%);
+	color: $light-color;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	&:hover{
+	background-color: #8f1b17;
+	transition: background-color 0.5s ease-in;
+	}
+}
+
+.search-button {
+	margin: 0.5rem 0;
+	height: 38px;
+	clip-path: polygon(100% 0%, 0% 0%, 0% 40%, 0% 100%, 25% 100%, 75% 100%, 100% 60%);
+}
