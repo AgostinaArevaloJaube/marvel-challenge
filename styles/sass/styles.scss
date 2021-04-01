@@ -1,2 +1,12 @@
-@import "variables";
-@import "base";
+@import 'partials/variables';
+@import 'partials/base';
+
+@import 'partials/components/button';
+@import 'partials/components/spinner';
+
+@import 'partials/header/header';
+@import 'partials/header/navbar';
+
+@import 'partials/main/hero/hero';
+@import 'partials/main/main';
+@import 'partials/main/allSuperheroes/allSuperheroes';
