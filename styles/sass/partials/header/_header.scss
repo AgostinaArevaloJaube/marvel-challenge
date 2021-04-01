@@ -1,0 +1,35 @@
+header {
+	background-color: $primary-color-first-variant;
+
+	.header-container {
+		padding: $general-padding 1.2rem;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		.logo {
+			width: 7rem;
+		}
+
+		.title {
+			display: none;
+
+			@media screen and (min-width: $above600) {
+				display: block;
+				color: $light-color;
+				font-style: italic;
+
+				.title-heroes {
+					color: $secondary-color;
+				}
+			}
+		}
+
+		@media screen and (min-width: $above1200) {
+			max-width: 70%;
+			margin: 0 auto;
+		}
+	}
+
+	
+}
