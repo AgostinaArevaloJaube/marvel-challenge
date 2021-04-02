@@ -2,9 +2,11 @@
 	margin: 0.6rem;
 	border-radius: 2px;
 	position: relative;
+	box-shadow: 5px 5px 15px 1px rgba(154,154,154,0.45);
 
 	.character-photo {
 		border-radius: 2px;
+		min-height: 16.3rem;
 		max-width: 16rem;
 		min-width: 16rem;
 		cursor: pointer;
@@ -24,7 +26,7 @@
 		width: 100%;
 		border-radius: 2px;
 		position: absolute;
-		bottom: 2.5px;
+		bottom: 1.9px;
 		display: flex;
 		justify-content: space-around;
 		background-color: #202020c2;
