@@ -1,6 +1,14 @@
 .icons {
+	margin: 2px;
 	font-size: 1.5em;
 	color: $secondary-color;
+	cursor: pointer;
+
+	&:hover{
+		font-size: 1.8em;
+		color: $light-color;
+		transition: all 0.2s ease-in-out;
+	}
 }
 
 // <i class="far fa-heart icons"></i>
