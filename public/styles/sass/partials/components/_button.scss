@@ -1,13 +1,18 @@
 .regular-button {
 	margin: 0.5rem;
-	padding: 0.3rem 0.9rem;
-	width: fit-content;
-	line-height: 2em;
-	text-align: center;
-	background-color: $secondary-color;
-	clip-path: polygon(100% 0%, 12% 0%, 0% 40%, 0% 100%, 25% 100%, 88% 100%, 100% 60%);
-	color: $light-color;
+	padding: 0.6rem 0.9rem;
 	border: none;
+	width: fit-content;
+	display: block;
+	font-family: $secondary-font;
+	font-weight: 500;
+	text-align: center;
+	color: $light-color;
+	text-decoration: none;
+	letter-spacing: .4px;
+	text-transform: uppercase;
+	background-color: $secondary-color;
+	clip-path: polygon(100% 0%, 15% 0%, 0% 40%, 0% 100%, 25% 100%, 83% 100%, 100% 60%);
 	outline: none;
 	cursor: pointer;
 
