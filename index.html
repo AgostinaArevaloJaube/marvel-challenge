@@ -15,11 +15,11 @@
 			type="image/x-icon"
 		/>
 		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&family=Roboto:wght@400;600;700&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./public/styles/css/styles.css" />
-		<title>Marvel</title>
+		<title>Marvel | Eureka Labs Challenge</title>
 	</head>
 	<body>
 		<header>
@@ -35,7 +35,7 @@
 		</header>
 
 		<main class="main-container">
-			<section class="hero-background">
+			<section class="hero-background hidden">
 				<div class="hero-container">
 					<h2 class="text">
 						explore, search and build your favorite
@@ -53,7 +53,7 @@
 				</div>
 			</section>
 
-			<section class="superheroes-section">
+			<section class="superheroes-section hidden">
 				<div>
 					<h2 class="title-section">
 						SUPER<span class="title-heroes">HEROES</span>
@@ -69,10 +69,31 @@
 					<!-- acá va la paginación -->
 				</div>
 			</section>
+
+			<section class="favorites-section">
+				<div>
+					<h2 class="title-section">
+						MY <span class="title-heroes">FAVORITES</span>
+					</h2>
+					<hr class="tittle-underline" />
+				</div>
+
+				<div class="no-favorites-container">
+					<p class="no-favorites-text">
+						Oops! You don't have any favorite superheroes yet.
+					</p>
+					<a href="" class="regular-button favorite-button">Back home</a>
+				</div>
+			</section>
+
+			<section class="character-section">
+				<h3>Alex Wilder</h3>
+				<p>Despite being the only one of the Runaways without any superhuman abilities or tech, Alex Wilder became the de facto leader of the group due to his natural leadership skills and intellect, as well as prodigy-level logic and strategy."</p>
+			</section>
 		</main>
 
 		<div class="spinner hidden"></div>
-		<button class="regular-button hidden">Back home</button>
+		<a href="" class="regular-button hidden">Back home</a>
 
 		<script src="src/index.js" type="module"></script>
 	</body>

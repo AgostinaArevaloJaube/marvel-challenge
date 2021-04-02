@@ -1,0 +1,25 @@
+.favorites-section {
+	margin-top: 3rem;
+}
+
+.no-favorites-container{
+	padding: 1.5rem;
+
+	.no-favorites-text{
+		margin-bottom: 2.5rem;
+		text-align: center;
+		font-family: $secondary-font;
+
+		@media screen and (min-width: $above600) {
+			font-size: 1.3em;
+		}
+
+		@media screen and (min-width: $above600) {
+			font-size: 1.3em;
+		}
+	}
+
+	.favorite-button{
+		margin: 0 auto;
+	}
+}
