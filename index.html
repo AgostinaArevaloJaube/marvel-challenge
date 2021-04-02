@@ -18,6 +18,13 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&family=Roboto:wght@400;600;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+
 		<link rel="stylesheet" href="./public/styles/css/styles.css" />
 		<title>Marvel | Eureka Labs Challenge</title>
 	</head>
@@ -70,7 +77,7 @@
 				</div>
 			</section>
 
-			<section class="favorites-section">
+			<section class="favorites-section hidden">
 				<div>
 					<h2 class="title-section">
 						MY <span class="title-heroes">FAVORITES</span>
@@ -86,14 +93,33 @@
 				</div>
 			</section>
 
-			<section class="character-section">
-				<h3>Alex Wilder</h3>
-				<p>Despite being the only one of the Runaways without any superhuman abilities or tech, Alex Wilder became the de facto leader of the group due to his natural leadership skills and intellect, as well as prodigy-level logic and strategy."</p>
+			<section class="character-container">
+				<div class="character-section">
+					<div class="character-description">
+						<div class="character-text-container">
+							<h3 class="character-name">Alex Wilder</h3>
+							<i class="far fa-heart icons"></i>
+						</div>
+						<p>
+							Despite being the only one of the Runaways without any superhuman
+							abilities or tech, Alex Wilder became the de facto leader of the
+							group due to his natural leadership skills and intellect, as well
+							as prodigy-level logic and strategy."
+						</p>
+					</div>
+
+					<img
+						class="character-photo"
+						src="http://i.annihil.us/u/prod/marvel/i/mg/2/c0/4c00377144d5a.jpg"
+						alt="Alex Wilder"
+					/>
+				</div>
+				<a href="" class="regular-button back-home-btn">Back home</a>
 			</section>
 		</main>
 
 		<div class="spinner hidden"></div>
-		<a href="" class="regular-button hidden">Back home</a>
+		<!-- <a href="" class="regular-button hidden">Back home</a> -->
 
 		<script src="src/index.js" type="module"></script>
 	</body>
