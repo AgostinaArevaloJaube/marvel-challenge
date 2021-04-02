@@ -1,0 +1,25 @@
+{
+	"name": "marvel-challenge",
+	"version": "1.0.0",
+	"description": "Challenge Eureka Labs | html, css, javascript",
+	"main": "index.html",
+	"scripts": {
+		"sass": "sass public/styles/sass/styles.scss styles/css/styles.css",
+		"sass:watch": "sass public/styles/sass/styles.scss:public/styles/css/styles.css --watch ",
+		"server": " http-server -c-1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AgostinaArevaloJaube/marvel-challenge.git"
+	},
+	"author": "Agostina Arevalo Jaube",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/AgostinaArevaloJaube/marvel-challenge/issues"
+	},
+	"homepage": "https://github.com/AgostinaArevaloJaube/marvel-challenge#readme",
+	"dependencies": {
+		"http-server": "^0.12.3",
+		"sass": "^1.32.8"
+	}
+}
