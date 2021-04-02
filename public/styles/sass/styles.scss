@@ -4,13 +4,12 @@
 @import 'partials/components/button';
 @import 'partials/components/spinner';
 @import 'partials/components/icons';
+@import 'partials/components/characters/charactersContainer';
+@import 'partials/components/characters/characterCard';
 
 @import 'partials/header/header';
 @import 'partials/header/navbar';
 
-@import 'partials/main/hero/hero';
-@import 'partials/main/main';
-@import 'partials/main/characters/charactersContainer';
-@import 'partials/main/characters/characterSection';
-@import 'partials/main/characters/characterCard';
-@import 'partials/main/favorites/favorites';
+@import 'partials/main/hero';
+@import 'partials/main/characterSection';
+@import 'partials/main/favorites';
