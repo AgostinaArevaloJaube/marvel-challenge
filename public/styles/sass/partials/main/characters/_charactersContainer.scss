@@ -35,3 +35,24 @@
 	border-radius: 10px;
 	background-color: $secondary-color;
 }
+
+
+.all-superheroes {
+	margin: 0 auto;
+	padding-top: 2.2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	@media screen and (min-width: $above600) {
+		max-width: 95%;
+	}
+
+	@media screen and (min-width: $above1024) {
+		max-width: 85%;
+	}
+
+	@media screen and (min-width: $above1200) {
+		max-width: 70%;
+	}
+}
