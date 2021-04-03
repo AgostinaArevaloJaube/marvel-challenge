@@ -31,14 +31,14 @@
 	<body>
 		<header>
 			<section class="header-container">
-				<a href=""
+				<a href="index.html"
 					><img class="logo" src="assets/marvel-logo.png" alt="Marvel Logo"
 				/></a>
 				<h1 class="title">SUPER<span class="title-heroes">HEROES</span></h1>
 				<nav class="navbar">
 					<a class="nav-link" href="">Favorites</a>
 					<hr class="line" />
-					<a class="nav-link" href="">Home</a>
+					<a class="nav-link" href="index.html">Home</a>
 				</nav>
 			</section>
 		</header>
@@ -62,111 +62,26 @@
 				</div>
 			</section>
 
+			<div class="hidden" id="loader">
+				<div class="spinner" id="spinner"></div>
+			</div>
+
 			<!-- ? TODOS LOS SUPERHEROES  -->
-			<section class="superheroes-section hidden">
-				<div>
-					<h2 class="title-section">
-						SUPER<span class="title-heroes">HEROES</span>
-					</h2>
-					<hr class="tittle-underline" />
-				</div>
+			<section class="superheroes-section" id="title-section">
+				<h2 class="title-section">
+					SUPER<span class="title-heroes">HEROES</span>
+				</h2>
+				<hr class="tittle-underline" />
+			</section>
 
-				<section class="all-superheroes">
-					<article class="character-card-container">
-						<img
-							class="character-photo"
-							src="http://i.annihil.us/u/prod/marvel/i/mg/6/03/53177154d219d.jpg"
-							alt="Wanda Maximoff"
-						/>
-
-						<div class="character-info">
-							<div class="character-name">
-								<p>Wanda Maximoff</p>
-							</div>
-							<i class="far fa-heart icons"></i>
-						</div>
-					</article>
-
-					<!-- ! -->
-					<article class="character-card-container">
-						<img
-							class="character-photo"
-							src="http://i.annihil.us/u/prod/marvel/i/mg/6/03/53177154d219d.jpg"
-							alt="Wanda Maximoff"
-						/>
-
-						<div class="character-info">
-							<div class="character-name">
-								<p>Wanda Maximoff</p>
-							</div>
-							<i class="far fa-heart icons"></i>
-						</div>
-					</article>
-					<article class="character-card-container">
-						<img
-							class="character-photo"
-							src="http://i.annihil.us/u/prod/marvel/i/mg/6/03/53177154d219d.jpg"
-							alt="Wanda Maximoff"
-						/>
-
-						<div class="character-info">
-							<div class="character-name">
-								<p>Wanda Maximoff</p>
-							</div>
-							<i class="far fa-heart icons"></i>
-						</div>
-					</article>
-					<article class="character-card-container">
-						<img
-							class="character-photo"
-							src="http://i.annihil.us/u/prod/marvel/i/mg/6/03/53177154d219d.jpg"
-							alt="Wanda Maximoff"
-						/>
-
-						<div class="character-info">
-							<div class="character-name">
-								<p>Wanda Maximoff</p>
-							</div>
-							<i class="far fa-heart icons"></i>
-						</div>
-					</article>
-					<article class="character-card-container">
-						<img
-							class="character-photo"
-							src="http://i.annihil.us/u/prod/marvel/i/mg/6/03/53177154d219d.jpg"
-							alt="Wanda Maximoff"
-						/>
-
-						<div class="character-info">
-							<div class="character-name">
-								<p>Wanda Maximoff</p>
-							</div>
-							<i class="far fa-heart icons"></i>
-						</div>
-					</article>
-					<article class="character-card-container">
-						<img
-							class="character-photo"
-							src="http://i.annihil.us/u/prod/marvel/i/mg/6/03/53177154d219d.jpg"
-							alt="Wanda Maximoff"
-						/>
-
-						<div class="character-info">
-							<div class="character-name">
-								<p>Wanda Maximoff</p>
-							</div>
-							<i class="far fa-heart icons"></i>
-						</div>
-					</article>
-				</section>
-
+			<section class="all-superheroes" id="all-superheroes">
 				<div>
 					<!-- acá va la paginación -->
 				</div>
 			</section>
 
 			<!-- ? FAVORITOS  -->
-			<section class="superheroes-section">
+			<section class="superheroes-section hidden" id="favorites-section">
 				<div>
 					<h2 class="title-section">
 						MY <span class="title-heroes">FAVORITES</span>
@@ -206,10 +121,7 @@
 						/>
 
 						<div class="character-info">
-							<div class="character-name">
-								<p>Wanda Maximoff</p>
-							</div>
-							<i class="far fa-heart icons"></i>
+							<p class="character-name">Abomination (Emil Blonsky)</p>
 						</div>
 					</article>
 					<article class="character-card-container">
@@ -221,7 +133,7 @@
 
 						<div class="character-info">
 							<div class="character-name">
-								<p>Wanda Maximoff</p>
+								<p>Wanda Maximoff (Ultimate)</p>
 							</div>
 							<i class="far fa-heart icons"></i>
 						</div>
@@ -271,32 +183,13 @@
 				</section>
 			</section>
 
-			<section class="character-container hidden">
-				<div class="character-section">
-					<div class="character-description">
-						<div class="character-text-container">
-							<h3 class="character-name">Alex Wilder</h3>
-							<i class="far fa-heart icons"></i>
-						</div>
-						<p>
-							Despite being the only one of the Runaways without any superhuman
-							abilities or tech, Alex Wilder became the de facto leader of the
-							group due to his natural leadership skills and intellect, as well
-							as prodigy-level logic and strategy."
-						</p>
-					</div>
-
-					<img
-						class="character-photo"
-						src="http://i.annihil.us/u/prod/marvel/i/mg/2/c0/4c00377144d5a.jpg"
-						alt="Alex Wilder"
-					/>
-				</div>
-				<a href="" class="regular-button back-home-btn">Back home</a>
-			</section>
+			<!-- ? CHARACTER EN PARTICULAR  -->
+			<section
+				class="character-container hidden"
+				id="character-section"
+			></section>
 		</main>
 
-		<div class="spinner hidden"></div>
 		<!-- <a href="" class="regular-button hidden">Back home</a> -->
 
 		<script src="src/index.js" type="module"></script>
