@@ -18,6 +18,7 @@ export async function displayMaximizedCharacter(id) {
 	hideSection(titleSection);
 	activateSpinner();
 	displaySection(characterSection, 'character-container');
+	characterSection.innerHTML = '';
 	const character = await getCharacterById(id);
 	desactivateSpinner();
 	displayCharacterSection(characterSection, character);

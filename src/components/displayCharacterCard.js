@@ -1,7 +1,7 @@
 import { displayMaximizedCharacter } from './displayMaximizedCharacter.js';
 
 export function displayCharacterCard(container, character) {
-	const characterContainer = document.createElement('article');
+	const characterContainer = document.createElement('div');
 	characterContainer.classList.add('character-card-container');
 
 	const characterPhoto = document.createElement('img');

@@ -1,5 +1,5 @@
 export function displayCharacterSection(section, character) {
-	const characterContainer = document.createElement('div');
+	const characterContainer = document.createElement('article');
 	characterContainer.innerHTML = `
 	<div class="character-section">
 		<div class="character-description">
