@@ -1,23 +1,6 @@
 import { displayMaximizedCharacter } from './displayMaximizedCharacter.js';
 
 export function displayCharacter(container, character) {
-	// const characterContainer = document.createElement('article');
-	// characterContainer.classList.add('character-card-container');
-	// characterContainer.innerHTML = `
-	// 	<img
-	// 		class="character-photo"
-	// 		src=${character.thumbnail.path}.${character.thumbnail.extension}
-	// 		alt=${character.name}
-	// 		onclick="displayMaximizedCharacter(${character.id})"
-	// 	/>
-
-	// 	<div class="character-info">
-	// 			<p class="character-name"  onclick="window.displayMaximizedCharacter(${character.id})">${character.name}</p>
-	// 			<i class="far fa-heart icons" onclick="console.log('hola')"></i>
-	// 	</div>
-
-	// `;
-
 	const characterContainer = document.createElement('article');
 	characterContainer.classList.add('character-card-container');
 
