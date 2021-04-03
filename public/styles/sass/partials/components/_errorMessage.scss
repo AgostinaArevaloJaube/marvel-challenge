@@ -1,0 +1,23 @@
+.error-container {
+	margin: 2rem auto 4rem auto;
+	padding: 3rem 0;
+
+	.error-text {
+		padding-bottom: 2rem;
+		text-align: center;
+		font-weight: 700;
+		font-size: 1.1em;
+
+		@media screen and (min-width: $above600) {
+			font-size: 1.3em;
+		}
+
+		@media screen and (min-width: $above768) {
+			font-size: 1.5em;
+		}
+	}
+
+	.error-color {
+		color: $secondary-color;
+	}
+}

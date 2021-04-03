@@ -94,6 +94,30 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
+.error-container {
+  margin: 2rem auto 4rem auto;
+  padding: 3rem 0;
+}
+.error-container .error-text {
+  padding-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+@media screen and (min-width: 600px) {
+  .error-container .error-text {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .error-container .error-text {
+    font-size: 1.5em;
+  }
+}
+.error-container .error-color {
+  color: #e72b24;
+}
+
 .superheroes-section {
   padding-top: 1rem;
 }

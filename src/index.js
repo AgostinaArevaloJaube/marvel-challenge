@@ -1,5 +1,5 @@
-import { displayAllCharacters } from './layout/displayAllCharacters.js';
-import { displaySearch } from './layout/displaySearch.js';
+import { displayAllCharacters } from './components/displayAllCharacters.js';
+import { displaySearch } from './components/displaySearch.js';
 
 displayAllCharacters();
 
@@ -13,9 +13,17 @@ searchInput.addEventListener('keypress', (event) => {
 });
 
 searchInput.addEventListener('input', (event) => {
-	displaySearch(searchInput.value);
+	if (searchInput.value.length === 0) {
+		displayAllCharacters();
+	} else {
+		displaySearch(searchInput.value);
+	}
 });
 
 searchButton.addEventListener('click', (event) => {
-	displaySearch(searchInput.value);
+	if (searchInput.value === '') {
+		displayAllCharacters();
+	} else {
+		displaySearch(searchInput.value);
+	}
 });
