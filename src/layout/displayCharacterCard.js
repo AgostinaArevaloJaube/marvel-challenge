@@ -1,6 +1,6 @@
 import { displayMaximizedCharacter } from './displayMaximizedCharacter.js';
 
-export function displayCharacter(container, character) {
+export function displayCharacterCard(container, character) {
 	const characterContainer = document.createElement('article');
 	characterContainer.classList.add('character-card-container');
 

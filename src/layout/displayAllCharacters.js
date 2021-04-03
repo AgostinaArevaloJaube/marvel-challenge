@@ -1,16 +1,16 @@
 import { getAllCharacters } from '../services/api.js';
+import { displayCharacterCard } from '../layout/displayCharacterCard.js';
 import {
 	activateSpinner,
 	desactivateSpinner,
 } from '../handlers/handleSpinner.js';
-import { displayCharacter } from '../layout/displayCharacter.js';
-import { allSuperheroesSection } from '../handlers/domElements.js';
-import { hideSection, displaySection } from '../handlers/handleSections.js';
 import {
 	titleSection,
+	allSuperheroesSection,
 	favoriteSection,
 	characterSection,
 } from '../handlers/domElements.js';
+import { hideSection, displaySection } from '../handlers/handleSections.js';
 
 export async function displayAllCharacters() {
 	activateSpinner();
@@ -19,7 +19,7 @@ export async function displayAllCharacters() {
 	hideSection(characterSection);
 	const allCharacters = await getAllCharacters();
 	allCharacters.map((character) =>
-		displayCharacter(allSuperheroesSection, character)
+		displayCharacterCard(allSuperheroesSection, character)
 	);
 	displaySection(titleSection, 'superheroes-section');
 	desactivateSpinner();
