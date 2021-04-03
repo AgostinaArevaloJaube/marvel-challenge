@@ -33,12 +33,6 @@ body {
   transition: background-color 0.5s ease-in;
 }
 
-.search-button {
-  margin: 0.5rem 0;
-  height: 38px;
-  clip-path: polygon(100% 0%, 0% 0%, 0% 40%, 0% 100%, 25% 100%, 75% 100%, 100% 60%);
-}
-
 .loader {
   height: 50vh;
   display: flex;
@@ -325,6 +319,7 @@ header .header-container .title {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .hero-container .search-container .search-input {
   padding: 0.23rem;
@@ -343,6 +338,13 @@ header .header-container .title {
   .hero-container .search-container .search-input {
     width: 60%;
   }
+}
+.hero-container .search-container .search-button {
+  position: relative;
+  left: -4px;
+  margin: 16px 0;
+  height: 38px;
+  clip-path: polygon(100% 0%, 0% 0%, 0% 40%, 0% 100%, 25% 100%, 75% 100%, 100% 60%);
 }
 
 .character-section {

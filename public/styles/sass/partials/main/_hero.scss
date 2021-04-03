@@ -18,7 +18,7 @@
 		font-weight: 700;
 		font-size: 1.1em;
 		text-align: center;
-		letter-spacing: .5px;
+		letter-spacing: 0.5px;
 		text-transform: uppercase;
 		color: #fff;
 
@@ -44,6 +44,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		position: relative;
 
 		.search-input {
 			padding: 0.23rem;
@@ -60,6 +61,22 @@
 			@media screen and (min-width: $above1200) {
 				width: 60%;
 			}
+		}
+
+		.search-button {
+			position: relative;
+			left: -4px;
+			margin: 16px 0;
+			height: 38px;
+			clip-path: polygon(
+				100% 0%,
+				0% 0%,
+				0% 40%,
+				0% 100%,
+				25% 100%,
+				75% 100%,
+				100% 60%
+			);
 		}
 	}
 }
