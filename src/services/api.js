@@ -7,7 +7,7 @@ const apiAutentication = `ts=1&apikey=${apikey}&hash=${hash}`;
 export async function getAllCharacters() {
 	try {
 		const response = await fetch(
-			`https://gateway.marvel.com:443/v1/public/characters?orderBy=modified&offset=${12}&${apiAutentication}`
+			`https://gateway.marvel.com:443/v1/public/characters?orderBy=name&offset=${12}&${apiAutentication}`
 		);
 		const charactersJson = await response.json();
 		console.log(charactersJson);
