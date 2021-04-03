@@ -10,7 +10,7 @@ import {
 	activateSpinner,
 	desactivateSpinner,
 } from '../handlers/handleSpinner.js';
-import { displayCharacterSection } from '../layout/displayCharacterSection.js';
+import { displayCharacterSection } from './displayCharacterSection.js';
 
 export async function displayMaximizedCharacter(id) {
 	hideSection(allSuperheroesSection);
