@@ -341,7 +341,7 @@ header .header-container .title {
 }
 .hero-container .search-container .search-button {
   position: relative;
-  left: -3px;
+  left: -5px;
   margin: 16px 0;
   height: 38px;
   border-top-left-radius: 4px;
