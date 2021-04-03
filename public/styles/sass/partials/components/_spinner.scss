@@ -1,3 +1,10 @@
+.loader {
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .spinner {
 	width: 80px;
 	height: 80px;
@@ -12,6 +19,16 @@
 		border: 4px solid transparent;
 		border-color: $secondary-color transparent $secondary-color transparent;
 		animation: rotation 2.2s linear infinite;
+
+		@media screen and (min-width: $above480) {
+			width: 55px;
+			height: 55px;
+		}
+
+		@media screen and (min-width: $above600) {
+			width: 80px;
+			height: 80px;
+		}
 	}
 }
 
