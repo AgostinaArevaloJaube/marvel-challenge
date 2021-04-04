@@ -3,7 +3,7 @@ import { displaySearch } from './components/displaySearch.js';
 import {
 	setLocalStorage,
 	setSessionStorage,
-} from './services/setLocalStorage.js';
+} from './services/setStorage.js';
 import {
 	favoritePage,
 	searchInput,
