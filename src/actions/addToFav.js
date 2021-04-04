@@ -4,7 +4,7 @@ function addToFav(name, id, path, extension) {
 	);
 
 	let objCharacter = {
-		username: name,
+		name: name,
 		id: id,
 		thumbnail: {
 			path: path,
@@ -19,5 +19,5 @@ function addToFav(name, id, path, extension) {
 		JSON.stringify(arrFavoritesCharacters)
 	);
 
-	// que vaya a favoritos
+	displayFavorites();
 }

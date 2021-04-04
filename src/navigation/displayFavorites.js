@@ -15,7 +15,7 @@ import { displaySection, hideSection } from '../handlers/handleSections.js';
 import { displayError } from '../components/displayError.js';
 import { displayCharacterCard } from '../components/displayCharacterCard.js';
 
-export function displayFavorites(params) {
+export function displayFavorites() {
 	let arrFavoritesCharacters = JSON.parse(
 		localStorage.getItem('FavoriteCharacters')
 	);
@@ -27,6 +27,7 @@ export function displayFavorites(params) {
 	hideSection(allSuperheroesSection);
 	hideSection(hero);
 	displaySection(favoriteSection);
+	favoriteContainer.innerHTML = '';
 	if (arrFavoritesCharacters.length > 0) {
 		desactivateSpinner();
 		arrFavoritesCharacters.map((character) =>

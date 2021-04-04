@@ -13,5 +13,5 @@ function removeFromFav(character) {
 		}
 	}
 
-	// que vaya a favoritos
+	displayFavorites();
 }
