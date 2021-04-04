@@ -4,6 +4,7 @@ import {
 	allSuperheroesSection,
 	favoriteSection,
 	characterSection,
+	searchContainer,
 } from '../handlers/domElements.js';
 import {
 	activateSpinner,
@@ -14,6 +15,7 @@ import { displayCharacterSection } from './displayCharacterSection.js';
 export async function displayMaximizedCharacter(id) {
 	hideSection(allSuperheroesSection);
 	hideSection(favoriteSection);
+	hideSection(searchContainer);
 	activateSpinner();
 	displaySection(characterSection, 'character-container');
 	characterSection.innerHTML = '';
@@ -21,3 +23,4 @@ export async function displayMaximizedCharacter(id) {
 	desactivateSpinner();
 	displayCharacterSection(characterSection, character);
 }
+	
