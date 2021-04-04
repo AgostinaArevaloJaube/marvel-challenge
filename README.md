@@ -1,6 +1,8 @@
 # Marvel
 
-Challenge para Eureka Labs
+## Challenge para Eureka Labs
+
+[Live Demo](https://agostina-marvel.netlify.app/)
 
 ## Features
 
@@ -19,14 +21,17 @@ Challenge para Eureka Labs
 ## Instalación
 
 Este proyecto usa **_Sass_** para los estilos y **_http-server_** para el servidor. Una vez descargado o clonado el repo corre:
+
 #### `npm install`
 
 ### - _Server_
 
 Para correr el server:
+
 #### `npm run server`
 
 ### - _Styles_
 
 Para compilar Sass:
+
 #### `npm run sass:watch`
