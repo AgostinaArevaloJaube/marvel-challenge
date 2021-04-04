@@ -1,9 +1,6 @@
 import { displayAllCharacters } from './components/displayAllCharacters.js';
-import { displaySearch } from './components/displaySearch.js';
-import {
-	setLocalStorage,
-	setSessionStorage,
-} from './services/setStorage.js';
+import { displaySearch } from './navigation/displaySearch.js';
+import { setLocalStorage, setSessionStorage } from './services/setStorage.js';
 import {
 	favoritePage,
 	searchInput,

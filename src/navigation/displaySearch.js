@@ -1,5 +1,5 @@
 import { getCharactersBySearch } from '../services/api.js';
-import { displayCharacterCard } from './displayCharacterCard.js';
+import { displayCharacterCard } from '../components/displayCharacterCard.js';
 import {
 	activateSpinner,
 	desactivateSpinner,
@@ -13,7 +13,7 @@ import {
 	errorContainer,
 } from '../handlers/domElements.js';
 import { hideSection, displaySection } from '../handlers/handleSections.js';
-import { displayError } from './displayError.js';
+import { displayError } from '../components/displayError.js';
 
 export async function displaySearch(search) {
 	hideSection(allSuperheroesSection);
