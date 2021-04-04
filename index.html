@@ -36,7 +36,7 @@
 				/></a>
 				<h1 class="title">SUPER<span class="title-heroes">HEROES</span></h1>
 				<nav class="navbar">
-					<a class="nav-link">Favorites</a>
+					<a class="nav-link" id="favorites-page">Favorites</a>
 					<hr class="line" />
 					<a class="nav-link" href="index.html">Home</a>
 				</nav>
@@ -44,7 +44,7 @@
 		</header>
 
 		<main class="main-container">
-			<section class="hero-background">
+			<section class="hero-background" id="hero">
 				<div class="hero-container">
 					<h2 class="text">
 						explore, search and build your favorite
@@ -67,7 +67,6 @@
 			<div class="hidden" id="loader">
 				<div class="spinner" id="spinner"></div>
 			</div>
-			<div class="hidden" id="error-container"></div>
 
 			<!-- ? TODOS LOS SUPERHEROES  -->
 			<section class="superheroes-section" id="title-section">
@@ -93,97 +92,13 @@
 				</div>
 
 				<div class="no-favorites-container hidden">
-					<p class="no-favorites-text">
-						Oops! You don't have any favorite superheroes yet.
+					<!-- <p class="no-favorites-text">
+						Oops! 
 					</p>
-					<a href="" class="regular-button favorite-button">Back home</a>
+					<a href="" class="regular-button favorite-button">Back home</a> -->
 				</div>
 
-				<section class="all-superheroes">
-					<article class="character-card-container">
-						<img
-							class="character-photo"
-							src="http://i.annihil.us/u/prod/marvel/i/mg/6/03/53177154d219d.jpg"
-							alt="Wanda Maximoff"
-						/>
-
-						<div class="character-info">
-							<div class="character-name">
-								<p>Wanda Maximoff</p>
-							</div>
-							<i class="far fa-heart icons"></i>
-						</div>
-					</article>
-
-					<!-- ! -->
-					<article class="character-card-container">
-						<img
-							class="character-photo"
-							src="http://i.annihil.us/u/prod/marvel/i/mg/2/c0/4c00377144d5a.jpg"
-							alt="Wanda Maximoff"
-						/>
-
-						<div class="character-info">
-							<p class="character-name">Abomination (Emil Blonsky)</p>
-						</div>
-					</article>
-					<article class="character-card-container">
-						<img
-							class="character-photo"
-							src="http://i.annihil.us/u/prod/marvel/i/mg/6/03/53177154d219d.jpg"
-							alt="Wanda Maximoff"
-						/>
-
-						<div class="character-info">
-							<div class="character-name">
-								<p>Wanda Maximoff (Ultimate)</p>
-							</div>
-							<i class="far fa-heart icons"></i>
-						</div>
-					</article>
-					<article class="character-card-container">
-						<img
-							class="character-photo"
-							src="http://i.annihil.us/u/prod/marvel/i/mg/6/03/53177154d219d.jpg"
-							alt="Wanda Maximoff"
-						/>
-
-						<div class="character-info">
-							<div class="character-name">
-								<p>Wanda Maximoff</p>
-							</div>
-							<i class="far fa-heart icons"></i>
-						</div>
-					</article>
-					<article class="character-card-container">
-						<img
-							class="character-photo"
-							src="http://i.annihil.us/u/prod/marvel/i/mg/6/03/53177154d219d.jpg"
-							alt="Wanda Maximoff"
-						/>
-
-						<div class="character-info">
-							<div class="character-name">
-								<p>Wanda Maximoff</p>
-							</div>
-							<i class="far fa-heart icons"></i>
-						</div>
-					</article>
-					<article class="character-card-container">
-						<img
-							class="character-photo"
-							src="http://i.annihil.us/u/prod/marvel/i/mg/6/03/53177154d219d.jpg"
-							alt="Wanda Maximoff"
-						/>
-
-						<div class="character-info">
-							<div class="character-name">
-								<p>Wanda Maximoff</p>
-							</div>
-							<i class="far fa-heart icons"></i>
-						</div>
-					</article>
-				</section>
+				<section class="all-superheroes" id="favorites-container"></section>
 			</section>
 
 			<!-- ? CHARACTER EN PARTICULAR  -->
@@ -191,10 +106,16 @@
 				class="character-container hidden"
 				id="character-section"
 			></section>
+
+			<div class="hidden" id="error-container"></div>
 		</main>
 
-		<!-- <a href="" class="regular-button hidden">Back home</a> -->
-
 		<script src="src/index.js" type="module"></script>
+		<script type="module">
+			import { displayMaximizedCharacter } from './src/components/displayMaximizedCharacter.js';
+			window.displayMaximizedCharacter = displayMaximizedCharacter;
+		</script>
+		<script src="src/actions/addToFav.js"></script>
+		<script src="src/actions/removeFromFav.js"></script>
 	</body>
 </html>
