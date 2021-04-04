@@ -5,8 +5,9 @@ import {
 	desactivateSpinner,
 } from '../handlers/handleSpinner.js';
 import {
-	titleSection,
 	allSuperheroesSection,
+	allSuperheroesContainer,
+	searchContainer,
 	favoriteSection,
 	characterSection,
 	errorContainer,
@@ -15,7 +16,7 @@ import { hideSection, displaySection } from '../handlers/handleSections.js';
 import { displayError } from './displayError.js';
 
 export async function displaySearch(search) {
-	hideSection(titleSection);
+	hideSection(allSuperheroesSection);
 	hideSection(favoriteSection);
 	hideSection(characterSection);
 	hideSection(errorContainer);
@@ -23,15 +24,13 @@ export async function displaySearch(search) {
 	const allCharacters = await getCharactersBySearch(search);
 	if (allCharacters.length === 0) {
 		displayError('No matches found');
-		hideSection(allSuperheroesSection);
-		hideSection(titleSection);
+		hideSection(allSuperheroesContainer);
 	} else {
-		allSuperheroesSection.innerHTML = '';
-		displaySection(titleSection, 'superheroes-section');
-		displaySection(allSuperheroesSection, 'all-superheroes');
+		searchContainer.innerHTML = '';
 		hideSection(errorContainer);
+		displaySection(searchContainer, 'all-superheroes');
 		allCharacters.map((character) => {
-			displayCharacterCard(allSuperheroesSection, character);
+			displayCharacterCard(searchContainer, character);
 		});
 	}
 	desactivateSpinner();

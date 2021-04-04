@@ -1,5 +1,4 @@
 import {
-	titleSection,
 	hero,
 	favoriteSection,
 	characterSection,
@@ -21,7 +20,6 @@ export function displayFavorites() {
 	);
 
 	activateSpinner();
-	hideSection(titleSection);
 	hideSection(characterSection);
 	hideSection(errorContainer);
 	hideSection(allSuperheroesSection);

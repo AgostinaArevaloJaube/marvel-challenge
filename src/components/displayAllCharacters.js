@@ -5,8 +5,8 @@ import {
 	desactivateSpinner,
 } from '../handlers/handleSpinner.js';
 import {
-	titleSection,
 	allSuperheroesSection,
+	allSuperheroesContainer,
 	favoriteSection,
 	characterSection,
 	errorContainer,
@@ -15,14 +15,14 @@ import { hideSection, displaySection } from '../handlers/handleSections.js';
 
 export async function displayAllCharacters() {
 	activateSpinner();
-	hideSection(titleSection);
+	hideSection(allSuperheroesSection);
 	hideSection(favoriteSection);
 	hideSection(characterSection);
 	hideSection(errorContainer);
 	const allCharacters = await getAllCharacters();
 	allCharacters.map((character) =>
-		displayCharacterCard(allSuperheroesSection, character)
+		displayCharacterCard(allSuperheroesContainer, character)
 	);
-	displaySection(titleSection, 'superheroes-section');
+	displaySection(allSuperheroesSection, 'superheroes-section');
 	desactivateSpinner();
 }

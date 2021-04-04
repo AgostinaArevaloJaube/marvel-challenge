@@ -3,7 +3,6 @@ let arrFavoritesCharacters = JSON.parse(
 );
 
 export function displayCharacterSection(section, character) {
-
 	const characterContainer = document.createElement('article');
 	characterContainer.innerHTML = `
 	<div class="character-section">
@@ -17,7 +16,6 @@ export function displayCharacterSection(section, character) {
 						? `<i class="far fa-trash-alt icons" onclick="removeFromFav('${character.id}')"></i>`
 						: `<i class="far fa-heart icons" onclick="addToFav('${character.name}', '${character.id}', '${character.thumbnail.path}','${character.thumbnail.extension}')"></i>`
 				}
-		
 			</div>
 			<p>
 				${
@@ -27,7 +25,6 @@ export function displayCharacterSection(section, character) {
 				}
 			</p>
 		</div>
-
 		<img
 			class="character-photo"
 			src=${character.thumbnail.path}.${character.thumbnail.extension}
