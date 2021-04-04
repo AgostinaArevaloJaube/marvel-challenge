@@ -10,7 +10,6 @@ export async function getAllCharacters(offset) {
 			`https://gateway.marvel.com:443/v1/public/characters?orderBy=name&offset=${offset}&${apiAutentication}`
 		);
 		const charactersJson = await response.json();
-		console.log(charactersJson);
 		setPagination(charactersJson);
 		const characters = charactersJson.data.results;
 		return characters;
