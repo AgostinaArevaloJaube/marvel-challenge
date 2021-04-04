@@ -21,13 +21,14 @@ export async function displaySearch(search) {
 	hideSection(characterSection);
 	hideSection(errorContainer);
 	activateSpinner();
+	searchContainer.innerHTML = '';
 	const allCharacters = await getCharactersBySearch(search);
 	if (allCharacters.length === 0) {
 		displayError('No matches found');
 		hideSection(allSuperheroesContainer);
 	} else {
-		searchContainer.innerHTML = '';
 		hideSection(errorContainer);
+		searchContainer.innerHTML = '';
 		displaySection(searchContainer, 'all-superheroes');
 		allCharacters.map((character) => {
 			displayCharacterCard(searchContainer, character);
