@@ -1,10 +1,19 @@
 import { displayAllCharacters } from './components/displayAllCharacters.js';
 import { displaySearch } from './components/displaySearch.js';
+import { setLocalStorage } from './services/setLocalStorage.js';
+import {
+	favoritePage,
+	searchInput,
+	searchButton,
+} from './handlers/domElements.js';
+import { displayFavorites } from './navigation/displayFavorites.js';
 
 displayAllCharacters();
+setLocalStorage();
 
-const searchInput = document.querySelector('#search-input');
-const searchButton = document.querySelector('#search-button');
+favoritePage.addEventListener('click', () => {
+	displayFavorites();
+});
 
 searchInput.addEventListener('keypress', (event) => {
 	if (event.keyCode === 13) {
