@@ -6,6 +6,9 @@ export const allSuperheroesContainer = document.querySelector(
 	'#all-superheroes-container'
 );
 export const searchContainer= document.querySelector('#search-container')
+
+export const paginationContainer = document.querySelector('#pagination-container')
+
 export const favoriteSection = document.querySelector('#favorites-section');
 export const favoritePage = document.querySelector('#favorites-page');
 export const favoriteContainer = document.querySelector('#favorites-container');

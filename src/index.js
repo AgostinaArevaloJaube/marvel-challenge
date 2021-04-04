@@ -1,6 +1,9 @@
 import { displayAllCharacters } from './components/displayAllCharacters.js';
 import { displaySearch } from './components/displaySearch.js';
-import { setLocalStorage } from './services/setLocalStorage.js';
+import {
+	setLocalStorage,
+	setSessionStorage,
+} from './services/setLocalStorage.js';
 import {
 	favoritePage,
 	searchInput,
@@ -8,8 +11,9 @@ import {
 } from './handlers/domElements.js';
 import { displayFavorites } from './navigation/displayFavorites.js';
 
-displayAllCharacters();
 setLocalStorage();
+setSessionStorage();
+displayAllCharacters(0);
 
 favoritePage.addEventListener('click', () => {
 	displayFavorites();
@@ -17,14 +21,6 @@ favoritePage.addEventListener('click', () => {
 
 searchInput.addEventListener('keypress', (event) => {
 	if (event.keyCode === 13) {
-		displaySearch(searchInput.value);
-	}
-});
-
-searchInput.addEventListener('input', (event) => {
-	if (searchInput.value.length === 0) {
-		displayAllCharacters();
-	} else {
 		displaySearch(searchInput.value);
 	}
 });

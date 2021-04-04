@@ -13,13 +13,14 @@ import {
 } from '../handlers/domElements.js';
 import { hideSection, displaySection } from '../handlers/handleSections.js';
 
-export async function displayAllCharacters() {
+export async function displayAllCharacters(offset) {
 	activateSpinner();
 	hideSection(allSuperheroesSection);
 	hideSection(favoriteSection);
 	hideSection(characterSection);
 	hideSection(errorContainer);
-	const allCharacters = await getAllCharacters();
+	allSuperheroesContainer.innerHTML = '';
+	const allCharacters = await getAllCharacters(offset);
 	allCharacters.map((character) =>
 		displayCharacterCard(allSuperheroesContainer, character)
 	);
